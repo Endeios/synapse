@@ -28,15 +28,17 @@ But let's update our drawing
 
 That's a lot more like the drawing i saw on wikipedia. We know that patterns are good ideas that we
 know work quite well in solving a problem, although a couple of things are missing in their universality.
-I'D ALSO THROW IN ANOTHER REQUIREMENT:<ZZ<
-WE WANT THE SERVICES TO SCALE, BUT WE DONT WANT TO HAVE THE SYSTEM FAIL IF ONE OF THEM FAILS AND GOES DOWN. 
-IN OTHER WORDS THE SERVICES SHOULD BE ABLE TO GOT UP AND DOWN AT ANY TIME, AND WE SHOULD CALL ALL THE SERVICES ACTIVE
+I'd also throw in another requirement
 
-THIS OTHER REQUIREMENT CREATES A PROBLEM WITH THIS FOLLOWING PHRASE
+-- we want the services to scale, but we dont want to have the system fail if one of them fails and goes down. 
 
-_**THE WHOLE LOT OF INFORMATION WE CAN GET ON THE RESOURCE AT ANY GIVEN TIME**_
+in other words the services should be able to got up and down at any time, and we should call all the services active
 
-HOW DO WE KNOW THAT WE GOT THE WHOLE INFORMATION? WE NEED A WAY TO KEEP TRACK OF THE SERVICES, A _REGISTER_. WE NEED THIS 
-OTHER COMPONENT THEN! WE ALSO NEED THAT THE SERVICES ANNOUNCE THEMSELF AT STARTUP, AND THAT THEY DEANNUNCE THEMSELF AT SHUTDOWN.
+this other requirement creates a problem with this following phrase
+
+_**the whole lot of information we can get on the resource at any given time**_
+
+how do we know that we got the whole information? we need a way to keep track of the services, a _register_. we need this 
+other component then! we also need that the services announce themself at startup, and that they deannunce themself at shutdown.
 
 

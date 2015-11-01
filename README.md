@@ -7,16 +7,16 @@ my errors will save someone's else time.
 The problem is known as *federation* and the solution is known as *[federated architecture](htps://en.wikipedia.org/wiki/Federated_architecture)*.
 This is an high level pattern, but can also apply to small things. In small things is usually called bus.
  In my case i will have a federation of boxes that may have or not knoledge about something (we will call this thing resource). 
-We will just say that theese _knoledge fragments_ are accesible via a command line interface, and that an application
-exsists that can translate the fragments from the native format to the syndacation format. A small
-scheme follows, to keep things clear; the drawing will get layers as the architecture grows. This one does
+We will just say that these _knoledge fragments_ are accesible via a command line interface, and that an application
+exsists that can translate the fragments from the native format to a syndacation format. A small
+scheme follows, to keep things clear; the drawing will get layers as the architecture grows. This first one does
 not look much like the wikipedia's one.
 
 ![Single Service](./doc/Complex_1.png)
 
 But we already said that there are multiple sources of information, so we will have many services. We will have to 
-interconnect all of hteese services, so wee will put on each one there an interface that will be the _trait d'union_
-with the system at large.Note that the interfaces, do the same thing: _they call the local magic app_ and serve the result back to the syndacation 
+interconnect all of hteese services, so we will put on each one there an interface that will be the _trait d'union_
+with the system at large. Note that the interfaces, do the same thing: _they call the local magic app_ and serve the result back to the syndacation 
 
 ![Multiple services](./doc/Complex_2.png)
 
